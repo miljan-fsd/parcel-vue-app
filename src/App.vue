@@ -15,7 +15,7 @@
 			<div class="column">
 				<h2 class="is-size-3">Starter-kit includes:</h2>
 				<ul>
-					<li><a href="https://vuejs.org/">Vue - The Progressive JavaScript Framework<a></li>
+					<li><a href="https://vuejs.org/">Vue - The Progressive JavaScript Framework</a></li>
 					<li><a href="https://bulma.io/">Bulma - CSS framework based on Flexbox</a></li>
 					<li><a href="https://prettier.io/">Prettier - Code formatter</a></li>
 					<li><a href="https://parceljs.org/">Parcel - Web application bundler</a></li>
@@ -23,7 +23,7 @@
 				</ul>
 			</div>
 			<div class="column">
-				<a v-on:click="counter += 1" class="button is-primary block">Click Me</a>				
+				<a v-on:click="counter += 1" class="button is-primary block">Click Me</a>
 		 		<p>The button above has been clicked {{ counter }} times.</p>
 			</div>
 		</div>
