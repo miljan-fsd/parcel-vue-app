@@ -6,16 +6,30 @@
   "extends": [
     "eslint:recommended",
     "plugin:vue/essential",
+    "plugin:prettier/recommended",
     "eslint-config-with-prettier",
     "prettier"
   ],
+  "plugins": ["vue", "prettier"],
+  "parser": "vue-eslint-parser",
   "parserOptions": {
-    "sourceType": "module"
+    "parser": "babel-eslint",
+    "sourceType": "module",
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "globalReturn": false,
+      "impliedStrict": false,
+      "jsx": false,
+      "experimentalObjectRestSpread": true
+    }
   },
   "rules": {
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "vue/mustache-interpolation-spacing": [2, "always"],
+    "no-new": "off",
+    "prettier/prettier": ["error", null, "@prettier"]
   }
 }

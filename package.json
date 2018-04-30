@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development parcel ./index.html -p 3000 --open",
-    "build": "cross-env NODE_ENV=production parcel build ./index.html -d build --public-url ./"
+    "build": "cross-env NODE_ENV=production parcel build ./index.html -d build --public-url ./",
+    "lint": "eslint 'src/**/*.{vue,js}'; exit 0",
+    "format": "prettier --write 'src/**/*.{vue,js}'; exit 0"
   },
   "keywords": [
     "Vue",
@@ -19,17 +21,21 @@
     "vue-hot-reload-api": "^2.3.0"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^1.1.0",
+    "@vue/component-compiler-utils": "^1.2.1",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "cross-env": "^5.1.4",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-with-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.5.0",
     "parcel-bundler": "^1.7.1",
     "parcel-plugin-eslint": "^1.0.4",
     "parcel-plugin-vue": "^1.5.0",
     "prettier": "1.12.1",
+    "vue-eslint-parser": "^2.0.3",
     "vue-template-compiler": "^2.5.16"
   }
 }
